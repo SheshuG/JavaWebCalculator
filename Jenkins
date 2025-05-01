@@ -11,9 +11,9 @@ pipeline {
   }
 
   stages {
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/SheshuG/JavaWebCalculator.git'
+    stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/SheshuG/JavaWebCalculator.git'
       }
     }
 
